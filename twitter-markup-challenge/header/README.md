@@ -61,3 +61,23 @@
 
 
 
+
+
+#### Timeline 부분
+
+<img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%203.07.18%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 3.07.18 AM" style="zoom:50%;" />
+
+* 논리적으로 완결된 하나의 기능들이 모여있음
+  * 트윗들의 list 형식으로 보여주는 View
+  * 보여지는 순서가 중요한 ordered list
+
+
+
+#### Tweet 부분
+
+> 실제 Timeline에 표현 될 list item
+
+<img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%203.25.56%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 3.25.56 AM" style="zoom:50%;" />
+
+* sectioning element인 `<article>` 을 사용해보자.
+  * 이 경우에는, 
