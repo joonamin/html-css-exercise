@@ -11,4 +11,10 @@
   * 전체 페이지의 대제목을 표현하는 영역이기도 하다.
     * twitter 로고가 있다..!
 * 의미론적으로 중요하게 사용하려면, 사용하고자 하는 `목적`이 분명해야한다.
-* 
+
+
+
+### Navigation
+
+* navigator들이 모여있는 공간들을 표현하는 section들이 존재
+* sectioning elements 이므로, 반드시 heading이 존재
