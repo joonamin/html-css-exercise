@@ -36,3 +36,28 @@
 * `section`, `navigation`, `article`, `aside` 같은 sectioning elements 내부에서 사용될 수 없다.
   * `main`이 parent container로써, 이와 같은 요소들을 감싸는 역할
 * header, main, footer가 병렬적으로 딱 떨어지는 구조를 지향하는 것이 좋긴 하지만, 디자인에 따라서 이런 구성은 달라질 수 있다.
+
+
+
+
+
+#### Tweet Form 부분
+
+<img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%201.08.52%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 1.08.52 AM" style="zoom:50%;" />
+
+* 가장 만만하게 `논리적으로 완성된 집합체`를 표현하는 `<section>` sectioning element를 사용하자. 
+* <u>remind</u>!! sectioning element는 항상 Heading이 필요하다.
+  * CSS로 스타일링으로 안보이게끔 만들 수 있다.
+  * Screen Reader로 들었을 때 정보의 명확성을 보장해야한다. 또한, 검색 엔진 최적화에도 큰 도움을 주기 때문이다.
+
+* <u>remind</u>!! 내가 마크업하고자 하는 대상이 무슨 기능을 수행하고, 어떠한 태그로 표현할 수 있겠는지에 대한 고려만하자! 디자인은 나중에!
+
+
+
+* 버튼들에 대한 고려
+  * 첫 번째 버튼은 `<input>` 에 가까운 역할을 한다. 
+    * input 태그는 스타일링이 진짜 안 먹는 요소이다.
+    * <u>팁💡</u> 스타일링을 위해서 버튼을 대신해서 사용하고, js를 통해서 input으로 데이터를 입력받도록 유도하는 방식
+
+
+
