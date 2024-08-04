@@ -1,0 +1,96 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form - Input</title>
+    <style>
+        /* styles.css */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+    font-family: 'Spoqa Han Sans', sans-serif; 
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans', sans-serif; 
+  letter-spacing: -.03em;
+  color: #212529;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  width: 360px;
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #101010;
+  letter-spacing: -.05em;
+}
+
+label {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+input {
+  display: block;
+  width: 360px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 7px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 1px solid #d3dce6;
+  transition: border-color 200ms ease-in-out;
+}
+
+input:focus,
+input:hover,
+input:active {
+  outline: none;
+  box-shadow: none;
+  border-color: #1fb6ff;
+}
+
+input[type="file"] {
+  padding-top: 10px;
+}
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <!-- 여기에 코드를 작성하세요 ❤️ -->
+    <form action="#" method="get">
+        <input type="text" placeholder="아이디를 입력하세요" minlength="3" maxlength="15" required="true" value="이건 기본값처럼 작동한다."/>
+        <input type="text" placeholder="이 영역은 클릭할 수 없음" disabled="true">
+        <input type="email" placeholder="여기는 이메일 형식">
+        <input type="password" placeholder="비밀번호!!" minlength="6">
+        <input type="url" placeholder="포트폴리오 url 주소를 적으시오">
+        <input type="number" placeholder="나이를 입력하세요 10~50세까지만" min="10" max="50">
+        <input type="file" placeholder="여기에는 파일을 첨부합니다. (허용되는 파일 포맷: jpg, png)" accept=".jpg, .png">
+        <button> Submit </button>
+    </form>
+
+</body>
+
+</html>

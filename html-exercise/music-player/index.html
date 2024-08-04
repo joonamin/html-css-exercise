@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+
+<ol class="music-player">
+    <li class="music-play-item">
+        <img src="https://m.media-amazon.com/images/I/814Rp76DidL._SS500_.jpg"
+             alt="러브 엑스 마키나 Love Ex Machina"
+             lang="ko"
+             class="music-album-cover"/>
+        <div class="music-info">
+            <div class="music-info-detail">
+                <h1>
+                    <span lang="ko">러브 엑스 마키나</span>
+                    Love Ex Machina
+                </h1>
+                <strong>
+                    MLSL (밀레니엄 살롱)
+                </strong>
+            </div>
+
+            <!-- 재생 시간이 크게 데이터 적인 가치가 있진 않음
+                그래도 screen reader로 사용하시는 분들을 위해서, aria 지원
+             -->
+            <span>
+            <span class="sr-only">Duration</span>
+            04:09
+        </span>
+        </div>
+        <audio src="./assets/music-1.mp3" class="music-audio"></audio>
+    </li>
+    <li class="music-play-item">
+        <img src="http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/660/591/80660591_1560403300605_1_600x600.JPG"
+             alt="올라가"
+             lang="ko"
+             class="music-album-cover"/>
+        <div class="music-info">
+            <div class="music-info-detail">
+                <h1>
+                    <span lang="ko">올라가</span>
+                </h1>
+                <strong>
+                    권선홍
+                </strong>
+            </div>
+
+            <!-- 재생 시간이 크게 데이터 적인 가치가 있진 않음
+                그래도 screen reader로 사용하시는 분들을 위해서, aria 지원
+             -->
+            <span>
+            <span class="sr-only">Duration</span>
+            03:33
+        </span>
+        </div>
+        <audio src="./assets/music-1.mp3" class="music-audio"></audio>
+    </li>
+</ol>
+
+<script src="./app.js"></script>
+</body>
+</html>

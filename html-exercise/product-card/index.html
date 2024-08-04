@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/75f69573a0.js" crossorigin="anonymous"></script>
+    <title>Product Card</title>
+</head>
+<body>
+
+    <div class="product-card">
+        <div class="product-card-image">
+            <img src="https://user-images.githubusercontent.com/19285811/69318246-becd7980-0c77-11ea-8324-6c43e2de8cf2.png" alt=""/>
+        </div>
+
+        <div class="product-card-title">
+            <h1>혼자가 혼자에게</h1>
+            <strong aria-level="오늘의 책 선정">오늘의 책</strong>
+        </div>
+
+        <strong class="product-card-author" aria-level="저자 이병률">이병률</strong>
+
+        <!-- 별표 자체는 데이터를 표현하기 위한 일종의 수단이지 main이 아니다 -->
+        <!-- 평점 그 자체에 중요도를 표시하는 것이 더 적절하다 -->
+
+        <strong aria-level="평점 9.4" class="product-card-review">
+            <span aria-hidden="true">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </span>
+            9.4
+        </strong>
+    </div>
+    <!-- alt 를 지정하지 않은 이유는 스크린 리더에서 2번 읽히지 않기 위해 -->
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Gmail Inbox</title>
+</head>
+<body>
+<!--    리스트의 아이템이 반복되는 형식으로 볼 수도 있고
+ 테이블 형식으로 표현될 수 있을 것 같다
+ 테이블 형식의 장점이라고하면 좀 더 sementic하다는 점이다-->
+
+    <table class="inbox">
+<!--        요소를 안보이게 설정하되, screen reader만 읽을 수 있도록-->
+<!--        의미를 살리기 위해서 많이 사용하는 convention-->
+        <thead class="sr-only">
+            <tr>
+                <th scope="col">Actions</th>
+                <th scope="col">Sender</th>
+                <th scope="col">Title</th>
+                <th scope="col">Timestamp</th>
+            </tr>
+        </thead>
+
+<!--        class의 value로 값을 주는 것은 단순하게 스타일링을 위한 것이지-->
+<!--        정보로서의 가치가 없기 때문에 screen reader에서는 이를 읽지 못한다.-->
+        <tbody>
+            <tr class="unread">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1"/>
+                            <label for="inbox-1" class="sr-only">Select this label</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <!--                        screen reader에서 읽을 수 있도록, 달랑 버튼 하나만 두는 것이 아닌-->
+                            <!--                        sementic하게 markup 하는 것이 중요하다.-->
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Goorm Edu
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Unread</strong>
+                        <strong>
+                            Rate your course: FRONTEND 101 WITH KIMBUG - Woohyeon. How’s everything going? We want to hear your opnion on...
+                        </strong>
+                    </a>
+                </td>
+                <td>
+                    3:34 PM
+                </td>
+            </tr>
+            <tr class="read">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1"/>
+                            <label for="inbox-1" class="sr-only">Select this label</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <!--                        screen reader에서 읽을 수 있도록, 달랑 버튼 하나만 두는 것이 아닌-->
+                            <!--                        sementic하게 markup 하는 것이 중요하다.-->
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Goorm Edu
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Read</strong>
+                        <strong>
+                            Rate your course: FRONTEND 101 WITH KIMBUG - Woohyeon. How’s everything going? We want to hear your opnion on...
+                        </strong>
+                    </a>
+                </td>
+                <td>
+                    3:34 PM
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>

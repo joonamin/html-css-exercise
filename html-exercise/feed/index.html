@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Feed</title>
+</head>
+<body>
+    <!-- 맨 처음 기준은 완성본을 기준으로 마크업하는 것이 좋다 -->
+    <!-- 특정 이벤트 발생 시에 특정 UI 요소가 보이게 하기 위해서 ~~ -->
+
+    <div class="feed">
+        <div class="feed-user-profile">
+            <a href="#">
+                <img src="https://user-images.githubusercontent.com/19285811/69063907-43da4800-0a58-11ea-8efb-4b57dca4e3fe.png" alt="Kimbug"/>
+            </a>
+
+            <div>
+            <!--    마크업에는 정답은 없다. 하지만, 일관적인 방식으로 마크업을 하는 것은 중요하다-->
+                <h1>
+                    <a href="#">
+                        Kimbug
+                    </a>
+                </h1>
+                <span aria-label="Posted 30 minutes ago">
+            30 min
+        </span>
+            </div>
+            <button type="button">
+                Follow
+            </button>
+        </div>
+
+
+        <div class="feed-content">
+            <p>
+            The most beautiful experience we can have is the mysterious. It is the fundamental emotion that stands at the cradle of true art and true science. — Albert Einstein
+        </p>
+        </div>
+
+        <!--    마크업을 할 때는, 항상 모든 요소를 보여준다고 생각하고 마크업을 수행한다.-->
+        <div class="feed-footer">
+            <button type="button">
+                10 Likes
+            </button>
+            <button type="button">
+                0 Comments
+            </button>
+        </div>
+
+        <div class="feed-comment">
+            <form action="" method="POST">
+                <textarea placeholder="Write a comment"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

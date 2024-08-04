@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Github Dropdown Menu</title>
+</head>
+<body>
+<!-- 특정 이미지를 눌렀을 때, 메뉴가 보여지는 동작을 구현하기 위해 적합한 것은 버튼 컴포넌트 -->
+<!-- 이미지가 정보로써의 가치를 할 경우 image tag를 사용하여 마크업하는 것이 좋다  -->
+    <div class="dropdown">
+        <button type="button" aria-label="Open user menu">
+            <img src="https://user-images.githubusercontent.com/19285811/69063907-43da4800-0a58-11ea-8efb-4b57dca4e3fe.png"
+                 alt="rohjs"
+                 class="dropdown-button"/>
+        </button>
+
+
+        <div class="dropdown-menu">
+            <!-- UI 요소가 무슨 역할을 하는 것인지 heading 으로 표현하는 것도 좋다! -->
+            <h3>
+                Signed in as
+                <a href="#">
+                    <strong>rohjs</strong>
+                </a>
+            </h3>
+
+            <!-- markup 을 할 때는 그 데이터가 주는 의미를 잘 살리는 것이 더더욱 중요하다 -->
+            <!-- 스타일링은 단순하게 CSS로 처리한다 -->
+
+            <ul>
+                <li>
+                    <a href="#">Your Profile</a>
+                </li>
+                <li>
+                    <a href="#">Your Repositories</a>
+                </li>
+                <li>
+                    <a href="#">Your Projects</a>
+                </li>
+
+                <li>
+                    <a href="#">Your Stars</a>
+                </li>
+                <li>
+                    <a href="#">Your Gists</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">Feature Preview</a>
+                </li>
+
+                <li>
+                    <a href="#">Help</a>
+                </li>
+
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <a href="#">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+</html>
