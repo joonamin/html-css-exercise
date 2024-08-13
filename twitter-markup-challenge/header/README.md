@@ -80,4 +80,6 @@
 <img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%203.25.56%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 3.25.56 AM" style="zoom:50%;" />
 
 * sectioning element인 `<article>` 을 사용해보자.
-  * 이 경우에는, 
+  * article: 정보 컨텐츠로서 의미의 완결성이 있는 컨텐츠 블록
+    * section 보다는 하나의 완결된 정보 블록을 표현하는 것이므로 article이 좀 더 어울린다.
+    * 독립적으로 존재하더라도 정보로서 의미가 있음

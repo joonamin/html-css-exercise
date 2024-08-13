@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tweet</title>
+</head>
+<body>
+    <article>
+        <h1>A Tweet from 김익명</h1>
+        <header>
+            <a href="#">
+                <img src="#" alt="김익명">
+            </a>
+            <!-- 사용자 이름 또한 클릭 시 사용자의 프로필 정보로 이동하는 anchor의 역할 -->
+            <h2>
+                <a href="#">
+                    김익명
+                </a>
+            </h2>
+            
+            <!-- Screen Reader를 고려하여 term과 대응하는 data를 정의 -->
+            <dl>
+                <div>
+                    <dt>Username</dt>
+                    <dd>
+                        <a href="#">
+                            @anonymouskim
+                        </a>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Posted</dt>
+                    <dd>Dec 25</dd>
+                </div>
+            </dl>
+            <button type="button" aria-label="Options">
+                <!-- icon -->
+            </button>
+            <div>
+                <button type="button">Show less often</button>
+                <button type="button">Embed Tweet</button>
+                <button type="button">Unfollow @anonymouskim</button>
+                <button type="button">Mute @anonymouskim</button>
+                <button type="button">Block @anonymouskim</button>
+                <button type="button">Report Tweet</button>
+            </div>
+        </header>
+        <p>
+            영어를 더 잘 하고싶다. 그러나 공부를 하고 싶지는 않다. 내 삶의 모든 것이 이런 식으로 망해왔다
+        </p>
+        
+        <!-- button list가 나타나야하는 곳 -->
+        <!-- header와 대응되는 느낌으로 sementic tag로 footer가 존재 -->
+        <footer>
+            <button type="button">
+                <span class="sr-only">Tweet your reply</span>
+                <strong aria-label="3 replied">3</strong>
+            </button>
+            
+            <!-- 버튼을 눌렀을 때 나타나야할 drop down 메뉴를 병렬적으로 배치한다 -->
+            <button type="button">
+                <span class="sr-only">Retweet</span>
+                <strong aria-label="3 retweeted">3</strong>
+            </button>
+            <div>
+                <button type="button">
+                    Retweet
+                </button>
+                <button type="button">
+                    Retweet with comment
+                </button>
+            </div>
+            
+            <!-- 드롭 다운 메뉴를 병렬적으로 배치 -->
+            <button type="button">
+                <span class="sr-only">Like this tweet</span>
+                <strong aria-label="100 liked">100</strong>
+            </button>
+            <button type="button">
+                <span class="sr-only">Share</span>
+            </button>
+            <div>
+                <button type="button">
+                    Send via Direct Message
+                </button>
+                <button type="button">
+                    Add Tweet to Bookmarks
+                </button>
+                <button type="button">
+                    Copy link to Tweet
+                </button>
+            </div>
+        </footer>
+    </article>
+</body>
+</html>
+
