@@ -23,7 +23,7 @@
 
 
 
-### Main
+## Main
 
 <img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%201.06.00%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 1.06.00 AM" style="zoom:67%;" />
 
@@ -41,7 +41,7 @@
 
 
 
-#### Tweet Form 부분
+### Tweet Form 부분
 
 <img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%201.08.52%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 1.08.52 AM" style="zoom:50%;" />
 
@@ -63,7 +63,7 @@
 
 
 
-#### Timeline 부분
+### Timeline 부분
 
 <img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-05%20at%203.07.18%E2%80%AFAM.png" alt="Screenshot 2024-08-05 at 3.07.18 AM" style="zoom:50%;" />
 
@@ -83,3 +83,15 @@
   * article: 정보 컨텐츠로서 의미의 완결성이 있는 컨텐츠 블록
     * section 보다는 하나의 완결된 정보 블록을 표현하는 것이므로 article이 좀 더 어울린다.
     * 독립적으로 존재하더라도 정보로서 의미가 있음
+
+
+
+## Aside
+
+<img src="https://raw.githubusercontent.com/joonamin/UpicImageRepo/master/uPic/Screenshot%202024-08-14%20at%201.01.14%E2%80%AFAM.png" alt="Screenshot 2024-08-14 at 1.01.14 AM" style="zoom:50%;" />
+
+**논리적으로 완성이 되었지만, 본문과는 관련성이 떨어지는 내용들이 있는 구역**
+
+* 본문의 내용과는 연관성이 떨어지는 부가 정보를 표현하기 위한 sectioning elements
+* 물론 `<section>` 또한 의미의 완결성이 있으므로 채택해도 되지만, 전체 웹페이지에서는 `<aside>` 를 사용하는 것이 좀 더 의미론적으로 좋아보인다.
+* 일반적으로 `사이드바`, `배너 광고`, `작은 위젯` 을 표현하는데 많이 활용된다.
