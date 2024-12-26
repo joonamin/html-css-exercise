@@ -1,0 +1,28 @@
+/*
+    block 의 장점과 inline의 장점을 합쳐놓은 것
+
+    `길막 + 흐름` 의 성질
+    block에 inline의 특성을 합쳐놓은 것
+        * inline처럼 흐르는 특성을 가지면서, 블록처럼 영역을 잡을 수 있는 것
+    
+    box type에서 무엇이 우월하다는 것은 없음
+    상황에 맞게 써야하는 type이 달라진다.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #212529;
+}
+
+span {
+    display: inline-block;
+    height: 100px;
+    margin-bottom: 50px;
+    color: #fff;
+    background-color: #0066ff;
+}
