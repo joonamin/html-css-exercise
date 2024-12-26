@@ -1,0 +1,52 @@
+/*
+    block은 "길막"을 하는 친구
+    ** 지나가지 못하게 차단하다 **
+    html 요소들을 렌더링할때, block 요소 다음에 다른 요소가 오지 못하도록
+    막는 역할을 수행한다.
+*/
+
+/*
+    block 타입의 width를 선언하지 않는 경우, 
+    width = 부모의 content-box의 100%
+
+    따로 width를 선언한 경우, 남은 공간은 margin으로 자동으로 채움
+*/
+
+/*
+    margin: 0 auto;
+    분석: top, bottom은 마진을 주지않고 left, right는 auto로 적용하여 가운데 배치
+
+    width, height, padding, border, margin 같은 모든 box-model에 있는 프로퍼티는 모두 적용 가능
+*/
+/*
+    따로 부모의 height를 선언하지 않을 경우, 자식 요소의 height의 합 + margin
+    = 부모의 height
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif
+}
+
+.parent {
+    background-color: beige;
+}
+
+.child,
+.other {
+    height: 50px;
+    color: #212529;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.child {
+    width: 500px;
+    background-color: #ffc82c;
+}
+.other {
+    width: 100px;
+    background-color: #ff4949;
+}
