@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: gray;
+    /* overflow: hidden; */
+}
+
+.child {
+    width: 200px;   
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.red {
+    background-color: #a22c2c;
+}
+
+.yellow {
+    background-color: yellowgreen;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.floated {
+    float: left;
+}
+
+.pseudo::before {
+    content: '🌟';
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.pseudo::after {
+    display: inline-block;
+    content: '!';
+    width: 10px;
+    font-style: italic;
+    background-color: pink;
+}
+
+.parent::after {
+    content: "";
+    /* psuedo element의 기본 박스 모델은 inline
+        clear는 block에만 적용할 수 있음
+    */
+    display: block;
+    clear: left;
+}
