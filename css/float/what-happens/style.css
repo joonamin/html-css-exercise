@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    width: 400px;
+    margin: 50 auto;
+    background-color: #eff2f7;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.red {
+    background-color: rgb(125, 28, 28);
+}
+
+.yellow {
+    background-color: rgb(157, 157, 44);
+}
+
+.blue {
+    background-color: rgb(41, 41, 133);
+}
+
+.floated {
+    float: left;
+}
+
+.floated-left {
+    float: left;
+}
+.floated-right {
+    float: right;
+}
+
+.other {
+    background-color: #000;
+    color: #fff;
+}
