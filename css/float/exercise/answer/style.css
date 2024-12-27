@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: black;
+}
+
+a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.tab-menu-item {
+    float: left;
+    margin-right: 16px;
+}
+
+/* anchor에 padding을 주는 것이 사용자 경험상 더 좋음
+    list item에 padding을 줄 경우, 글자를 눌러야 anchor가 동작
+    anchor에 padding을 줄 경우, 여백 공간을 눌러도 anchor 동작
+*/
+/* 레이아웃이 이상할 경우에는 '개발자 도구'를 켜서 확인해주자 */
+/* anchor의 content-size가 정해지지 않았다. 이상하다.. box type확인 -> inline이네? */
+/* 상하간격을 주기 위해서는 block타입이 되어야겠군*/
+.tab-menu-item a {
+    display: block;
+    padding: 16px 20px;
+}
+
+.tab-menu {
+    max-width: 540px;
+    border-bottom: 1px solid #E5EAEF;
+    background-color: #fff;
+}
+
+.tab-menu-item.selected {
+    border-bottom: 2px solid #2860E1;
+}
+
+.tab-menu-item.selected a {
+    color: #2860E1;
+    font-weight: 500;
+}
