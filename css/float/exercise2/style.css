@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2d3d;
+    line-height: 1.25;
+}
+
+strong {
+    font-size: 14px;
+    font-weight: 400;
+    color: #afb3b9;
+    line-height: 1.4285714286;
+}
+
+p {
+    font-size: 16px;
+    color: #79818b;
+    line-height: 1.5;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.card {
+    max-width: 570px;
+    padding: 5px;
+    border: 2px solid #000;
+}
+
+.card::after {
+    display: block;
+    content: "";
+    clear: left;
+}
+
+.card-user {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 15px 25px;
+    float: left;
+    border-radius: 100%;
+}
+
+.card-content {
+    margin-top: 15px;
+    float: left;
+}
