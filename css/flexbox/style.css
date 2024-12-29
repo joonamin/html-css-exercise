@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between; */
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; */
+
+    /* display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end; */
+    
+/* 아래는 align-items와 align-content의 차이점을 확인 해보기 위한 것 */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+    /* align-items: flex-end; */
+    align-content: center;
+
+
+    /* width: 500px; */
+    /* width: 1000px; */
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #eff2f7;
+}
+
+.child {
+    width: 300px;
+    /* width: 200px; */
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.red {
+    order: 3;
+    background-color: #ff4949;
+}
+
+.yellow {
+    order: 1;
+    background-color: #ffc82c;
+}
+
+.blue {
+    order: 2;
+    background-color: #0066ff;
+}
