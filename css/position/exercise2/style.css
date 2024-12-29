@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.card {
+    width: 400px;
+    border: 1px solid ghostwhite;
+    border-radius: 4px;
+}
+
+.card-carousel {
+    width: 400px;
+    height: 250px;
+    position: relative;
+}
+
+.card-carousel img {
+    width: 400px;
+    height: 250px;
+}
+.card-carousel #prev {
+    position: absolute;
+    left: 0;
+    top: 45%;
+
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+.card-carousel #next {
+    position: absolute;
+    right: 0;
+    top: 45%;
+
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+
+.card-content {
+    padding-left: 10px;
+    background-color: white;
+}
+
+.card-content > h1 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card-content > span {
+    display: block;
+    color: gray;
+}
+
+.card-content > strong {
+    display: block;
+    bottom: 0;
+    right: 10px;
+    
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: right;
+    color: blue;
+}
+.card-content > strong > span {
+    font-size: 15px;
+    color: black;
+}
