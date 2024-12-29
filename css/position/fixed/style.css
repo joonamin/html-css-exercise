@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 3000px;
+}
+.parent {
+    width: 400px;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.grandparent {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #1f2d3d;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+}

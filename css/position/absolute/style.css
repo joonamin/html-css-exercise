@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    width: 400px;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+/* absolute 처리를 하고 나서는, block 처리가 된다. */
+/* margin이 생기지 않고 있다. (길막을 하지 못해 슬픈 블록...) */
+.absolute {
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+}
+
+.grandparent {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #1f2d3d;
+}
