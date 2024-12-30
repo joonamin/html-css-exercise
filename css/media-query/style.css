@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #212529;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+
+    width: 100vw;
+    /* vh: viewport height */
+    height: 100vh;
+    background-color: #ff4949;
+}
+
+.box::after {
+    content: "Mobile";
+}
+
+.box img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+@media screen and (min-width: 576px) {
+    /* css 선언 */
+    .box {
+        background-color: #ff5216;
+    }
+    .box::after {
+        content: "Landscape Phone";
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        background-color: #ffc82c;
+    }
+    .box::after {
+        content: "Tablet";
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .box img {
+        animation: rotate 1500ms infinite;
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
