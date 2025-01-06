@@ -1,0 +1,22 @@
+html {
+    font-size: 20px;    
+}
+
+p {
+    /* font-size: 2em; */
+    /* font-size: 3rem; */
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    /* color: rgb(0, 102, 255); */
+    color: rgb(0, 102, 255, 0.5);
+}
+
+.parent {
+    font-size: 20px;
+}
+
+.body {
+    font-family: "Poppins";
+}
