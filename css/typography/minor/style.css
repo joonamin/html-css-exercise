@@ -1,0 +1,12 @@
+p {
+    /* text-align: right; */
+    /* text-align: center; */
+    text-indent: 100px;
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+
+    font-style: italic;
+    /* font-style: oblique; */
+}

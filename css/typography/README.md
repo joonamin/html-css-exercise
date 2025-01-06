@@ -34,7 +34,7 @@
 
   * `baseline`
 
-    -
+    - 글자의 밑 받침이 되는 가상의 선
 
   * `font-family`
 
@@ -59,3 +59,26 @@
       - `#0066ff` => hex 방식
       - `rgb(0, 102, 255)` => rgb 방식
       - `rgba(0, 102 255, 1)` => rgba 방식 (마지막에 투명도가 추가된 것)
+
+* minor
+  - `text-align`
+    - "텍스트를 정렬하는 기능"
+      - `left | right | center`
+  * `text-indent`
+    - "들여쓰기를 할 때 그 크기를 명시하는 것"
+      - -값도 사용이 가능하다.
+  * `text-transform`
+    - "텍스트가 변화한다는 뜻"
+      - alphabetic한 문자들에게는 의미가 있다
+        - `none | capitalize | uppercase | lowercase`
+  * `text-decoration`
+    - "텍스트를 어떤 방식으로 꾸밀 것인가?"
+      - 거창한 것이 아닌, 텍스트에 줄을 긋는 것과 관련이 있음
+    - `none | underline | line-through | overline`
+    * anchor에 많이 사용된다.
+      - anchor tag의 기본 스타일은 `text-decoration: underline` 이다. 이런 스타일이 마음이 안든다면 바꿀 수 있다.
+  * `font-style`
+    - `normal | italic | oblique`
+    * `italic`체를 적용할 때 가장 많이 사용한다.
+      - `<em>` 를 강조할 때 시맨틱 태그로 많이 사용.
+        - 이 때, font-style은 기본적으로 italic으로 지정됨. 이를 재설정하고 싶을 때 사용!
